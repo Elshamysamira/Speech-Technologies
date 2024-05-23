@@ -36,28 +36,41 @@ logger = logging.getLogger(__name__)
 """
 
 _ACCENTS_EN = [
-    1e4, # max 20000 samples per accent
-    # "Austrian", # 104
-    # "East African Khoja", # 107
-    # "Dutch", # 108
-    # "West Indies and Bermuda (Bahamas, Bermuda, Jamaica, Trinidad)", # 282
-    # "Welsh English", # 623
-    "Malaysian English", # 1004
-    # "Liverpool English,Lancashire English,England English", # 2571
-    "Singaporean English", # 2792
-    "Hong Kong English", # 2951
-    "Filipino", # 4030
-    "Southern African (South Africa, Zimbabwe, Namibia)", # 4270
-    "New Zealand English", # 4960
-    "Irish English", # 6339
-    # "Northern Irish", # 6862
-    "Scottish English", # 10817
-    "Australian English", # 33335
-    "German English,Non native speaker", # 41258
-    "Canadian English", # 45640
-    "England English", # 75772
-    "India and South Asia (India, Pakistan, Sri Lanka)", # 79043
-    "United States English", # 249284
+    1e3, # max 1000 samples per accent
+ "Austrian", # 104
+ "United States English,Southern Californian", # 105
+ "East African Khoja", # 107
+ "Dutch", # 108
+ "England English,Canadian English", # 130
+ "United States English,Southwestern United States English", # 135
+ "New Zealand English,England English", # 145
+ "England English,South London", # 147
+ "United States English,England English", # 171
+ "England English,Northern England", # 176
+ "United States English,Unite States Midwest", # 178
+ "United States English,southern United States,New Orleans dialect", # 231
+ "United States English,Midwestern,Minnesotan", # 276
+ "West Indies and Bermuda (Bahamas, Bermuda, Jamaica, Trinidad)", # 282
+ "United States English,Midwestern,Low,Demure", # 374
+ "southern United States,United States English", # 391
+ "Welsh English", # 623
+"Malaysian English", # 1004
+"England English,New Zealand English", # 2037
+"Liverpool English,Lancashire English,England English", # 2571
+"Singaporean English", # 2792
+"Hong Kong English", # 2951
+"Filipino", # 4030
+"Southern African (South Africa, Zimbabwe, Namibia)", # 4270
+"New Zealand English", # 4960
+"Irish English", # 6339
+"Northern Irish", # 6862
+"Scottish English", # 10817
+"Australian English", # 33335
+"German English,Non native speaker", # 41258
+"Canadian English", # 45640
+"England English", # 75772
+"India and South Asia (India, Pakistan, Sri Lanka)", # 79043
+"United States English", # 249284
 ]
 _ACCENTS_FR = [
     1e4, # max 10000 samples per accent
@@ -234,7 +247,7 @@ def create_sets(data_folder, extension, language="en"):
     
     # get the max_samples_per_accent from the list:
     max_samples_per_accent = ACCENTS[0]
-    max_samples_per_accent = 2e3
+    #max_samples_per_accent = 2e3
     
     # accent counter to balance the datasets:
     accent_counter = { acc_id: 0 for acc_id in ACCENTS}

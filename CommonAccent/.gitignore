@@ -5,3 +5,8 @@ common_voice_11_0/**
 
 accent_id/notebooks/**
 accent_id/hparams/backup
+
+.DS_Store
+**/.DS_Store
+
+CommonAccent/accent_id/data/*
