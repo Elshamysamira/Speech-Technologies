@@ -15,7 +15,7 @@ def prepare_cv_from_hf(output_folder, language="en"):
     os.makedirs(output_folder, exist_ok=True)
 
     # Load the Common Voice dataset
-    common_voice_ds = load_dataset("mozilla-foundation/common_voice_11_0", language, streaming=True)
+    common_voice_ds = load_dataset("mozilla-foundation/common_voice_11_0", language, streaming=False)
 
     # Just select relevant splits: train/validation/test set
     splits = ["train", "validation", "test"]
