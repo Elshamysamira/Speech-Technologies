@@ -36,7 +36,7 @@ logger = logging.getLogger(__name__)
 """
 
 _ACCENTS_EN = [
-    1e3, # max 1000 samples per accent
+    1e3, # max 1000 samples per accent - 1000 or 10000???
  "Austrian", # 104
  "United States English,Southern Californian", # 105
  "East African Khoja", # 107
