@@ -37,10 +37,10 @@ logger = logging.getLogger(__name__)
 
 _ACCENTS_EN = [
     1e3, # max 1000 samples per accent - 1000 or 10000???
- "Austrian", # 104
+ #"Austrian", # 104
  "United States English,Southern Californian", # 105
- "East African Khoja", # 107
- "Dutch", # 108
+ #"East African Khoja", # 107
+ #"Dutch", # 108
  "England English,Canadian English", # 130
  "United States English,Southwestern United States English", # 135
  "New Zealand English,England English", # 145
@@ -54,22 +54,22 @@ _ACCENTS_EN = [
  "United States English,Midwestern,Low,Demure", # 374
  "southern United States,United States English", # 391
  "Welsh English", # 623
-"Malaysian English", # 1004
+#"Malaysian English", # 1004
 "England English,New Zealand English", # 2037
 "Liverpool English,Lancashire English,England English", # 2571
-"Singaporean English", # 2792
-"Hong Kong English", # 2951
-"Filipino", # 4030
+#"Singaporean English", # 2792
+#"Hong Kong English", # 2951
+#"Filipino", # 4030
 "Southern African (South Africa, Zimbabwe, Namibia)", # 4270
 "New Zealand English", # 4960
 "Irish English", # 6339
 "Northern Irish", # 6862
 "Scottish English", # 10817
 "Australian English", # 33335
-"German English,Non native speaker", # 41258
+#"German English,Non native speaker", # 41258
 "Canadian English", # 45640
 "England English", # 75772
-"India and South Asia (India, Pakistan, Sri Lanka)", # 79043
+#"India and South Asia (India, Pakistan, Sri Lanka)", # 79043
 "United States English", # 249284
 ]
 _ACCENTS_FR = [
